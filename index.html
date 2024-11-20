@@ -81,16 +81,11 @@
     <p class="title is-3"> 🧙‍♂️ AnimateAnything: Consistent and Controllable Animation for video generation
     </p>
 
-
-
-
-
-
     <div class="is-flex is-justify-content-center">
 
     </div>
     <br>
-    <img class="summary-img" src="imgs/teaser_2_cropped_00.png" style="width:100%;">
+    <img class="summary-img" src="imgs/teaser.png" style="width:100%;">
 
   </div>
 
@@ -107,8 +102,9 @@
     <p class="title is-3 mt-5 has-text-centered">Overview</p>
 
     <img class="summary-img" src="imgs/pipeline.png" style="width:100%;">
-    <p class="content is-size-6">The overview of AnimateAnything. Our framework is mainly constituted with two parts. FlowAnything and ControlAnything</p>
-    
+    <p class="content is-size-6">The overview of AnimateAnything. Our framework is mainly constituted with two parts:Unified Flow Generation and Video Generation</p>
+    <!-- <p class="content is-size-6">  unified Flow Generation and Video Generation</p> -->
+    <img class="summary-img" src="imgs/all_direction.png" style="width:100%;">
 
     <p class="title is-3 mt-5 has-text-centered"> Visualization Results</p>
 
@@ -126,12 +122,12 @@
           <tr> 
             <th> <image src="imgs/bear_1.png"> </th>
             <th> <image src="imgs/panda_1.png"> </th>
-            <th> <image src="imgs/elephant_1.png"> </th>
+            <th> <image src="imgs/sheep_pose_compare.png"> </th>
           </tr>
           <tr> 
             <th> <video muted controls autoplay loop> <source src="dynamic_scene/0_animals24.9.21_bear7.jpg_openvidcheckpoint-2400_final_video.mp4" type="video/mp4"> </video> </th>
             <th> <video muted controls autoplay loop> <source src="dynamic_scene/0_animals24.9.21_panda2.jpg_openvidcheckpoint-2400_final_video.mp4" type="video/mp4"> </video> </th>
-            <th> <video muted controls autoplay loop> <source src="dynamic_scene/1_animals_2_9.jpg_openvidcheckpoint-2400_final_video.mp4" type="video/mp4"> </video> </th>
+            <th> <video muted controls autoplay loop> <source src="dynamic_scene/sheep_large.mp4" type="video/mp4"> </video> </th>
           </tr>
           <tr> 
             <th> <image src="imgs/sheep_1.png"> </th>
@@ -242,7 +238,7 @@
           <tr> 
             <th>
                 <a href="">
-                    <image src="img_quality_compare/fish_camera1.png">
+                    <image src="imgs/fish_pose_2.png">
                     <!-- <image width="200" src="img_quality_compare/fish_camera1.png"> -->
                 </a>
             </th>
@@ -253,7 +249,7 @@
           <tr> 
             <th>
                 <a href="">
-                    <img src="img_quality_compare/horse_camera2.png">
+                    <img src="imgs/horse_pose_2.png">
                 </a>
             </th>
             <th> <video muted controls autoplay loop> <source src="pose_compare/horse_cameractrl.mp4" type="video/mp4"> </video> </th>
@@ -333,7 +329,7 @@
               <th style="text-align: center; vertical-align: middle;">
                 Reference Video
               </th>
-              <th style="text-align: center; vertical-align: middle;">Optical Flow</th>
+              <th style="text-align: center; vertical-align: middle;">MotionClone</th>
               <th style="text-align: center; vertical-align: middle;">Motion-I2V</th>
               <th style="text-align: center; vertical-align: middle;">MOFA-Video</th>
               <th style="text-align: center; vertical-align: middle;">Ours</th>
@@ -341,7 +337,7 @@
           <tr> 
 
             <th> <video muted controls autoplay loop> <source src="human_compare/man_1_ref.mp4" type="video/mp4"> </video> </th>
-            <th> <video muted controls autoplay loop> <source src="human_compare/man_1_flow.mp4" type="video/mp4"> </video> </th>
+            <th> <video muted controls autoplay loop> <source src="human_compare/man_1_motionclone_1.mp4" type="video/mp4"> </video> </th>
             <th> <video muted controls autoplay loop> <source src="human_compare/man_1_motioni2v.mp4" type="video/mp4"> </video> </th>
             <th> <video muted controls autoplay loop> <source src="human_compare/man_1_mofa.mp4" type="video/mp4"> </video> </th>
             <th> <video muted controls autoplay loop> <source src="human_compare/man_1_ours.mp4" type="video/mp4"> </video> </th>
@@ -350,20 +346,13 @@
             <tr> 
 
               <th> <video muted controls autoplay loop> <source src="human_compare/man_2_ref.mp4" type="video/mp4"> </video> </th>
-              <th> <video muted controls autoplay loop> <source src="human_compare/man_2_flow.mp4" type="video/mp4"> </video> </th>
+              <th> <video muted controls autoplay loop> <source src="human_compare/man_2_motionclone_1.mp4" type="video/mp4"> </video> </th>
               <th> <video muted controls autoplay loop> <source src="human_compare/man_2_motioni2v.mp4" type="video/mp4"> </video> </th>
               <th> <video muted controls autoplay loop> <source src="human_compare/man_2_mofa.mp4" type="video/mp4"> </video> </th>
               <th> <video muted controls autoplay loop> <source src="human_compare/man_2_ours.mp4" type="video/mp4"> </video> </th>
             </tr>
 
           </table>   
-
-
-
-
-
-
-
 
 
 
@@ -385,27 +374,35 @@
                 <th style="text-align: center; vertical-align: middle;">
                   Reference Video
                 </th>
-                <th style="text-align: center; vertical-align: middle;">Optical Flow</th>
+                <th style="text-align: center; vertical-align: middle;">MotionClone</th>
                 <th style="text-align: center; vertical-align: middle;">Motion-I2V</th>
                 <th style="text-align: center; vertical-align: middle;">MOFA-Video</th>
                 <th style="text-align: center; vertical-align: middle;">Ours</th>
             </tr>    
             <tr> 
   
-              <th> <video muted controls autoplay loop> <source src="human_compare/man_1_ref.mp4" type="video/mp4"> </video> </th>
-              <th> <video muted controls autoplay loop> <source src="human_compare/man_1_flow.mp4" type="video/mp4"> </video> </th>
-              <th> <video muted controls autoplay loop> <source src="human_compare/man_1_motioni2v.mp4" type="video/mp4"> </video> </th>
-              <th> <video muted controls autoplay loop> <source src="human_compare/man_1_mofa.mp4" type="video/mp4"> </video> </th>
-              <th> <video muted controls autoplay loop> <source src="human_compare/man_1_ours.mp4" type="video/mp4"> </video> </th>
+              <th> <video muted controls autoplay loop> <source src="animal_animation/eagle_raw.mp4" type="video/mp4"> </video> </th>
+              <th> <video muted controls autoplay loop> <source src="animal_animation/eagle_motionclone_1.mp4" type="video/mp4"> </video> </th>
+              <th> <video muted controls autoplay loop> <source src="animal_animation/eagle_motioni2v_1.mp4" type="video/mp4"> </video> </th>
+              <th> <video muted controls autoplay loop> <source src="animal_animation/eagle_mofa_1.mp4" type="video/mp4"> </video> </th>
+              <th> <video muted controls autoplay loop> <source src="animal_animation/eagle_ours.mp4" type="video/mp4"> </video> </th>
             </tr>
             <tr> 
               <tr> 
   
-                <th> <video muted controls autoplay loop> <source src="human_compare/man_2_ref.mp4" type="video/mp4"> </video> </th>
-                <th> <video muted controls autoplay loop> <source src="human_compare/man_2_flow.mp4" type="video/mp4"> </video> </th>
-                <th> <video muted controls autoplay loop> <source src="human_compare/man_2_motioni2v.mp4" type="video/mp4"> </video> </th>
-                <th> <video muted controls autoplay loop> <source src="human_compare/man_2_mofa.mp4" type="video/mp4"> </video> </th>
-                <th> <video muted controls autoplay loop> <source src="human_compare/man_2_ours.mp4" type="video/mp4"> </video> </th>
+                <th> <video muted controls autoplay loop> <source src="animal_animation/panda_raw.mp4" type="video/mp4"> </video> </th>
+                <th> <video muted controls autoplay loop> <source src="animal_animation/motionclone_panda_1.mp4" type="video/mp4"> </video> </th>
+                <th> <video muted controls autoplay loop> <source src="animal_animation/panda_motioni2v_1.mp4" type="video/mp4"> </video> </th>
+                <th> <video muted controls autoplay loop> <source src="animal_animation/mofa_panda_1.mp4" type="video/mp4"> </video> </th>
+                <th> <video muted controls autoplay loop> <source src="animal_animation/panda_ours.mp4" type="video/mp4"> </video> </th>
+              </tr>
+              <tr> 
+  
+                <th> <video muted controls autoplay loop> <source src="animal_animation/tiger_ours.mp4" type="video/mp4"> </video> </th>
+                <th> <video muted controls autoplay loop> <source src="animal_animation/motionclone_tiger_1.mp4" type="video/mp4"> </video> </th>
+                <th> <video muted controls autoplay loop> <source src="animal_animation/tiger_motioni2v_1.mp4" type="video/mp4"> </video> </th>
+                <th> <video muted controls autoplay loop> <source src="animal_animation/mofa_tiger_1.mp4" type="video/mp4"> </video> </th>
+                <th> <video muted controls autoplay loop> <source src="animal_animation/tiger_ours.mp4" type="video/mp4"> </video> </th>
               </tr>
   
             </table>   
@@ -494,7 +491,7 @@
 
           <div class="content has-text-justified">
             <h3 class="title is-4">All kinds of Drags</h3>
-            </div>
+            </div>  
       
             <table class="table" style="height:100%;width:100%;">
               <colgroup>
